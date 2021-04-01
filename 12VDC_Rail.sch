@@ -1,0 +1,110 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5FC9B801
+P 6450 3450
+F 0 "J8" H 6368 3767 50  0000 C CNN
+F 1 "12V DC PWR INTPUT" H 6368 3676 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" H 6450 3450 50  0001 C CNN
+F 3 "~" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6750 3350 2    50   Output ~ 0
+12V
+Text HLabel 6750 3450 2    50   Output ~ 0
+12V
+Text HLabel 6750 3550 2    50   BiDi ~ 0
+GNDPWR
+Text HLabel 6750 3650 2    50   BiDi ~ 0
+GNDPWR
+Wire Wire Line
+	6750 3350 6650 3350
+Wire Wire Line
+	6750 3450 6650 3450
+Wire Wire Line
+	6750 3650 6650 3650
+Wire Wire Line
+	6750 3550 6650 3550
+Wire Notes Line
+	2950 4550 7600 4550
+Wire Notes Line
+	7600 2500 2950 2500
+Wire Notes Line
+	2950 2100 7600 2100
+Wire Notes Line
+	2950 2100 2950 4550
+Wire Notes Line
+	7600 2100 7600 4550
+Text Notes 4050 2400 0    50   ~ 0
+120VAC TO 12V 30 AMP SWITCHING SUPPLY. PROVIDES DC POWER TO\nMOTORS AND CONTROL BOARD ARDUINO UNO /W SHEILD
+$Comp
+L Device:LED D3
+U 1 1 5FCA2E37
+P 5000 3800
+F 0 "D3" V 5039 3682 50  0000 R CNN
+F 1 "GRN" V 4948 3682 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5000 3800 50  0001 C CNN
+F 3 "~" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FCA3412
+P 5000 3400
+F 0 "R2" H 5070 3446 50  0000 L CNN
+F 1 "4K7" H 5070 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4930 3400 50  0001 C CNN
+F 3 "~" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 5000 3050 1    50   Output ~ 0
+12V
+Text HLabel 5000 4100 3    50   BiDi ~ 0
+GNDPWR
+Wire Wire Line
+	5000 3050 5000 3250
+Wire Wire Line
+	5000 3550 5000 3650
+Wire Wire Line
+	5000 3950 5000 4100
+$Comp
+L Connector_Generic:Conn_01x03 J9
+U 1 1 5FCAA21C
+P 3700 3400
+F 0 "J9" H 3780 3442 50  0000 L CNN
+F 1 "120VAC_OUT" H 3780 3351 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_3-G_1x03_P5.00mm_Horizontal" H 3700 3400 50  0001 C CNN
+F 3 "~" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 3350 3300 0    50   Input ~ 0
+LINE
+Text HLabel 3350 3400 0    50   Input ~ 0
+NEUT
+Text HLabel 3350 3500 0    50   Input ~ 0
+GND
+Wire Wire Line
+	3350 3500 3500 3500
+Wire Wire Line
+	3350 3400 3500 3400
+Wire Wire Line
+	3350 3300 3500 3300
+$EndSCHEMATC

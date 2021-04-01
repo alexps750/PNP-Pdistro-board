@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PNP-machine-Power-Distribution-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/PNP machine Power Distribution Board-rescue.lib")(options "")(descr ""))
+)

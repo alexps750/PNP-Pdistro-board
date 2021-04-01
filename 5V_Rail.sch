@@ -1,0 +1,313 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:LM2576S-5 U1
+U 1 1 5FCA0168
+P 3900 3450
+F 0 "U1" H 3900 3817 50  0000 C CNN
+F 1 "LM2576S-5" H 3900 3726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 3900 3200 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2576.pdf" H 3900 3450 50  0001 C CNN
+	1    3900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5FCA0D84
+P 5600 3800
+F 0 "C2" H 5718 3846 50  0000 L CNN
+F 1 "220u" H 5718 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 5638 3650 50  0001 C CNN
+F 3 "~" H 5600 3800 50  0001 C CNN
+	1    5600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5FCA1730
+P 4550 3800
+F 0 "D1" V 4504 3880 50  0000 L CNN
+F 1 "1N5822" V 4595 3880 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 4550 3800 50  0001 C CNN
+F 3 "~" H 4550 3800 50  0001 C CNN
+	1    4550 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5FCA20F7
+P 4800 3550
+F 0 "L1" V 4750 3550 50  0000 C CNN
+F 1 "100U" V 4900 3550 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 4800 3550 50  0001 C CNN
+F 3 "~" H 4800 3550 50  0001 C CNN
+	1    4800 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5FCA2B21
+P 2900 3650
+F 0 "C1" H 3018 3696 50  0000 L CNN
+F 1 "100U" H 3018 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.3" H 2938 3500 50  0001 C CNN
+F 3 "~" H 2900 3650 50  0001 C CNN
+	1    2900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3550 3300 3550
+Wire Wire Line
+	3300 3550 3300 3850
+Wire Wire Line
+	3300 3850 3900 3850
+Wire Wire Line
+	3900 3850 3900 3750
+Connection ~ 3900 3850
+Text HLabel 2650 4150 0    50   BiDi ~ 0
+GNDPWR
+Wire Wire Line
+	2650 4150 2900 4150
+Wire Wire Line
+	5250 3950 5250 4150
+Wire Wire Line
+	4550 3950 4550 4150
+Connection ~ 4550 4150
+Wire Wire Line
+	4550 4150 5250 4150
+Wire Wire Line
+	3900 3850 3900 4150
+Connection ~ 3900 4150
+Wire Wire Line
+	3900 4150 4550 4150
+Wire Wire Line
+	2900 3800 2900 4150
+Connection ~ 2900 4150
+Wire Wire Line
+	2900 4150 3900 4150
+Wire Wire Line
+	2900 3500 2900 3350
+Wire Wire Line
+	2900 3350 3400 3350
+Wire Wire Line
+	2900 3350 2700 3350
+Connection ~ 2900 3350
+Wire Wire Line
+	4400 3350 5250 3350
+Wire Wire Line
+	5250 3350 5250 3550
+Wire Wire Line
+	4400 3550 4550 3550
+Wire Wire Line
+	4550 3650 4550 3550
+Connection ~ 4550 3550
+Wire Wire Line
+	4550 3550 4650 3550
+Wire Wire Line
+	4950 3550 5250 3550
+Connection ~ 5250 3550
+Wire Wire Line
+	5250 3550 5250 3650
+Text HLabel 9000 3550 2    50   Output ~ 0
+5V
+$Comp
+L Device:CP C3
+U 1 1 5FCD6D77
+P 6050 3800
+F 0 "C3" H 6168 3846 50  0000 L CNN
+F 1 "220u" H 6168 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 6088 3650 50  0001 C CNN
+F 3 "~" H 6050 3800 50  0001 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5FCD7205
+P 6900 3800
+F 0 "C4" H 7018 3846 50  0000 L CNN
+F 1 "220u" H 7018 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 6938 3650 50  0001 C CNN
+F 3 "~" H 6900 3800 50  0001 C CNN
+	1    6900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5FCD75BB
+P 7350 3800
+F 0 "C5" H 7468 3846 50  0000 L CNN
+F 1 "220u" H 7468 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 7388 3650 50  0001 C CNN
+F 3 "~" H 7350 3800 50  0001 C CNN
+	1    7350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5FCD7CF7
+P 7800 3800
+F 0 "C6" H 7918 3846 50  0000 L CNN
+F 1 "220u" H 7918 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 7838 3650 50  0001 C CNN
+F 3 "~" H 7800 3800 50  0001 C CNN
+	1    7800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4150 6050 4150
+Wire Wire Line
+	7800 4150 7800 3950
+Wire Wire Line
+	7350 3950 7350 4150
+Connection ~ 7350 4150
+Wire Wire Line
+	7350 4150 7800 4150
+Wire Wire Line
+	6900 3950 6900 4150
+Connection ~ 6900 4150
+Wire Wire Line
+	6900 4150 7350 4150
+Wire Wire Line
+	6050 3950 6050 4150
+Wire Wire Line
+	6050 4150 6500 4150
+Wire Wire Line
+	6050 3650 6050 3550
+Wire Wire Line
+	6050 3550 6500 3550
+Wire Wire Line
+	6900 3650 6900 3550
+Connection ~ 6900 3550
+Wire Wire Line
+	6900 3550 7350 3550
+Wire Wire Line
+	7350 3650 7350 3550
+Connection ~ 7350 3550
+Wire Wire Line
+	7350 3550 7800 3550
+Wire Wire Line
+	7800 3650 7800 3550
+Wire Wire Line
+	7800 3550 8250 3550
+$Comp
+L Device:R R1
+U 1 1 5FCDAED9
+P 8600 3800
+F 0 "R1" H 8670 3846 50  0000 L CNN
+F 1 "1K" H 8670 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 3800 50  0001 C CNN
+F 3 "~" H 8600 3800 50  0001 C CNN
+	1    8600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FCDB505
+P 8600 4200
+F 0 "D2" V 8639 4082 50  0000 R CNN
+F 1 "BLU" V 8548 4082 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8600 4200 50  0001 C CNN
+F 3 "~" H 8600 4200 50  0001 C CNN
+	1    8600 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 4050 8600 3950
+Wire Wire Line
+	8600 3650 8600 3550
+Connection ~ 8600 3550
+Wire Wire Line
+	8600 3550 9000 3550
+Wire Wire Line
+	8250 4500 8600 4500
+Wire Wire Line
+	8600 4500 8600 4350
+$Comp
+L Device:C C7
+U 1 1 5FCE5AB2
+P 5250 3800
+F 0 "C7" H 5365 3846 50  0000 L CNN
+F 1 "C" H 5365 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5288 3650 50  0001 C CNN
+F 3 "~" H 5250 3800 50  0001 C CNN
+	1    5250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5FCE607E
+P 6500 3800
+F 0 "C8" H 6615 3846 50  0000 L CNN
+F 1 "C" H 6615 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 3650 50  0001 C CNN
+F 3 "~" H 6500 3800 50  0001 C CNN
+	1    6500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5FCE64EA
+P 8250 3800
+F 0 "C9" H 8365 3846 50  0000 L CNN
+F 1 "C" H 8365 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8288 3650 50  0001 C CNN
+F 3 "~" H 8250 3800 50  0001 C CNN
+	1    8250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3550 5600 3550
+Wire Wire Line
+	5600 3550 5600 3650
+Connection ~ 5600 3550
+Wire Wire Line
+	5600 3550 6050 3550
+Wire Wire Line
+	5600 4150 5600 3950
+Wire Wire Line
+	5250 4150 5600 4150
+Connection ~ 5250 4150
+Connection ~ 5600 4150
+Connection ~ 7800 3550
+Wire Wire Line
+	7800 4150 8250 4150
+Wire Wire Line
+	8250 4150 8250 3950
+Connection ~ 7800 4150
+Wire Wire Line
+	8250 3650 8250 3550
+Connection ~ 8250 3550
+Wire Wire Line
+	8250 3550 8600 3550
+Wire Wire Line
+	6500 3650 6500 3550
+Connection ~ 6500 3550
+Wire Wire Line
+	6500 3550 6900 3550
+Wire Wire Line
+	6500 3950 6500 4150
+Connection ~ 6500 4150
+Wire Wire Line
+	6500 4150 6900 4150
+Connection ~ 6050 4150
+Connection ~ 6050 3550
+Wire Wire Line
+	8250 4500 8250 4150
+Connection ~ 8250 4150
+Text HLabel 2700 3350 0    50   Input ~ 0
+12V
+$EndSCHEMATC
